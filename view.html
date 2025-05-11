@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Bookings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Current Bookings</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="view.html">View Bookings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- All Bookings Table -->
+    <section>
+      <h2>All Bookings</h2>
+      <div id="bookings-container"></div>
+    </section>
+
+    <hr>
+
+    <!-- Filter & Manage My Bookings -->
+    <section>
+      <h2>Manage My Bookings</h2>
+      <input type="text" id="my-booking-name" placeholder="Enter your name or room">
+      <button id="filter-bookings">Show My Bookings</button>
+      <div id="my-bookings-container"></div>
+    </section>
+
+    <hr>
+
+    <!-- Check Available Time Slots -->
+    <section>
+      <h2>Check Available Time Slots</h2>
+      <input type="date" id="check-date">
+      <button id="check-availability">Check</button>
+      <div id="available-slots"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hostel Booking System</p>
+  </footer>
+
+  <script src="view.js" defer></script>
+</body>
+</html>
